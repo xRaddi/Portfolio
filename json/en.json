@@ -1,0 +1,44 @@
+{
+    "nav-bar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home": {
+        "first-text": "Hello",
+        "second-text": "I'm Cristian Semeniuk",
+        "third-text": "- Frontend Developer -"
+    },
+    "about": {
+        "about-title": "About",
+        "first-text": "I'm Cristian Semeniuk, a Tech passionate and Web Developer",
+        "second-text": "I am a freelancer based in Argentina - Buenos Aires and i have been building noteworthy websites for6 months, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products.",
+        "button-text": " Download CV"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "services": {
+        "header": "Services",
+        "first-title": "Fully Reesponsive",
+        "first-description": "Your site will display properly on any device, including desktop computers, tablets and mobile phones.",
+        "second-title": "Creative Design",
+        "second-description": "A good and attractive web design helps you keep your leads on your site, which is the digital face of your business.",
+        "third-title": "Development",
+        "third-description": "I know the importance of web design and can help you create a website you’ll love.",
+        "fourth-title": "Social Media Integreation",
+        "fourth-description": "There are a lot of social platforms out there, and you should promote your presence on them on your website",
+        "fifth-title": "Performance",
+        "fifth-description": "Retaining users is crucial to improving conversions. High-performing sites engage and retain users",
+        "sixth-description": "I will optimize your site with intelligent Search Engine Optimization strategy to generate leads."
+    },
+    "footer": {
+        "first-text": "Contact",
+        "second-text": "Feel free to contact me!",
+        "third-text": "Email Me!",
+        "fourth-text": "Follow Me!"
+    }
+}

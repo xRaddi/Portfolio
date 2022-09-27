@@ -1,0 +1,44 @@
+{
+    "nav-bar": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "skills": "Habilidades",
+        "services": "Servicio",
+        "portfolio": "Portfolio",
+        "contact": "Contacto"
+    },
+    "home": {
+        "first-text": "Hola",
+        "second-text": "Soy Cristian Semeniuk",
+        "third-text": "- Desarollador Frontend -"
+    },
+    "about": {
+        "about-title": "Sobre mi",
+        "first-text": "Soy Cristian Semeniuk, un apasionado de la tecnologia y el desarollo web",
+        "second-text": "Soy un freelancer de Argentina - Buenos Aires. Estoy construyendo sitios web desde hace más de 6 meses con las ultimas tecnologias y tendencias en diseño web. Voy a ayudar a convertir tu vision e ideas en un producto digital deseado.",
+        "button-text": " Descargar CV"
+    },
+    "skills": {
+        "title": "Habilidades"
+    },
+    "services": {
+        "header": "Servicios",
+        "first-title": "Totalmente Responsive",
+        "first-description": "Tu sitio se va a ver correctamente en cualquier despositivo, incluido computadoras de escritorio, tablets y celulares.",
+        "second-title": "Diseño Creativo",
+        "second-description": "Un sitio con un diseño bueno y atractivo que mantiene la ventaja sobre la competencia, la cual es la cara de tu negocio.",
+        "third-title": "Desarollo",
+        "third-description": "Conozco la importancia de un diseño que puuede ayudar a crear la web que amas.",
+        "fourth-title": "Integracion de Redes Sociales",
+        "fourth-description": "Hay muchas redes sociales en estos momentos, y promocionoras tu presencia en ellas.",
+        "fifth-title": "Rendimiento",
+        "fifth-description": "Retener usuarios es crucial para tu sitio. El alto rendimiento del sitio mantiene a los usuarios activos",
+        "sixth-description": "Voy a optimizar tu sitio web con las busquedas inteligentes con las ultimas estrategias del mercado"
+    },
+    "footer": {
+        "first-text": "Contacto",
+        "second-text": "No dudes en contactarme!",
+        "third-text": "Enviame un Email!",
+        "fourth-text": "Sigueme!"
+    }
+}

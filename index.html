@@ -33,57 +33,67 @@
 <body>
     <header id="nav-bar">
         <div class="container">
-            <div class="logo"><a href="#">Semeniuk</a></div>
+            <div class="logo">
+                <a href="#">Semeniuk</a>
+            </div>
             <div class="nav_url">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" data-section="nav-bar" data-value="home">Home</a>
+                <a href="#about" data-section="nav-bar" data-value="about">About</a>
+                <a href="#skills" data-section="nav-bar" data-value="skills">Skills</a>
+                <a href="#services" data-section="nav-bar" data-value="services">Services</a>
+                <a href="#portfolio" data-section="nav-bar" data-value="portfolio">Portfolio</a>
+                <a href="#contact" data-section="nav-bar" data-value="contact">Contact</a>
             </div>
             <div class="bars" id="bars_js">
                 <i class="fas fa-bars"></i>
                 <div class="menu-responsive" id="menu-responsive_js">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home" data-section="nav-bar" data-value="home">Home</a>
+                    <a href="#about" data-section="nav-bar" data-value="about">About</a>
+                    <a href="#skills" data-section="nav-bar" data-value="skills">Skills</a>
+                    <a href="#services" data-section="nav-bar" data-value="services">Services</a>
+                    <a href="#portfolio" data-section="nav-bar" data-value="portfolio">Portfolio</a>
+                    <a href="#contact" data-section="nav-bar" data-value="contact">Contact</a>
                 </div>
             </div>
         </div>
-
+        <div class="flags" id="flags">
+            <div class="lang" data-language="es">Spanish</div>
+            <div class="lang" data-language="en">English</div>
+        </div>
     </header>
     <section id="home">
         <div class="container">
             <div class="background"></div>
-            <img src="./img/profile_pic.webp" alt="CSemeniuk Profile">
+            <picture>
+                <img src="./img/profile_pic.webp" alt="CSemeniuk Profile">
+            </picture>
             <div class="description">
-                <span>Hello!</span>
-                <h1>I'm Cristian Semeniuk</h1>
-                <span>- Frontend Developer -</span>
+                <span data-section="home" data-value="first-text">Hello!</span>
+                <h1 data-section="home" data-value="second-text">I'm Cristian Semeniuk</h1>
+                <span data-section="home" data-value="third-text">- Frontend Developer -</span>
             </div>
         </div>
     </section>
     <section id="about">
-        <h2 class="custom_title">About</h2>
+        <h2 class="custom_title" data-section="about" data-value="about-title">About</h2>
         <div class="container">
             <div class="about_container">
-                <h3>I'm Cristian Semeniuk, a Tech passionate and Web Developer</h3>
-                <p>I am a freelancer based in Argentina - Buenos Aires and i have been building noteworthy websites for
+                <h3 data-section="about" data-value="first-text">I'm Cristian Semeniuk, a Tech passionate and Web
+                    Developer</h3>
+                <p data-section="about" data-value="second-text">I am a freelancer based in Argentina - Buenos Aires and
+                    i have been building noteworthy websites for
                     6 months, which comply with the latest design trends. I help convert a vision and an idea into
                     meaningful and useful products.
                 </p>
-                <a class="button" href="./assets/CV_2022.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-download"></i> Download CV
+                <a class="button" href="./assets/CV_2022.pdf" target="_blank" rel="noopener noreferrer"><i
+                        class="fas fa-file-download"></i><span data-section="about" data-value="button-text"> Download
+                        CV</span>
                 </a>
             </div>
         </div>
     </section>
     <header id="skills">
-        <h3 class="custom_title">Skills</h3>
+        <h3 class="custom_title" data-section="skills" data-value="title">Skills</h3>
         <div class="container-grid">
             <div class="container_skills">
                 <i class="fab fa-html5"></i>
@@ -100,41 +110,48 @@
         </div>
     </header>
     <header id="services">
-        <h2 class="custom_title">Services</h2>
+        <h2 class="custom_title" data-section="services" data-value="header">Services</h2>
         <div class="container_services_grid">
             <div class="services_item">
                 <i class="fas fa-mobile-alt"></i>
-                <h3 class="services_name">Fully Responsive</h3>
-                <p>Your site will display properly on any device, including desktop computers, tablets and mobile
+                <h3 class="services_name" data-section="services" data-value="first-title">Fully Responsive</h3>
+                <p data-section="services" data-value="first-description">Your site will display properly on any device,
+                    including desktop computers, tablets and mobile
                     phones.</p>
             </div>
             <div class="services_item">
                 <i class="fas fa-pencil-ruler"></i>
-                <h3 class="services_name">Creative Design</h3>
-                <p>A good and attractive web design helps you keep your leads on your site, which is the digital face of
+                <h3 class="services_name" data-section="services" data-value="second-title">Creative Design</h3>
+                <p data-section="services" data-value="second-description">A good and attractive web design helps you
+                    keep your leads on your site, which is the digital face of
                     your business.</p>
             </div>
             <div class="services_item">
                 <i class="fas fa-code"></i>
-                <h3 class="services_name">Development</h3>
-                <p>I know the importance of web design and can help you create a website you’ll love.</p>
+                <h3 class="services_name" data-section="services" data-value="third-title">Development</h3>
+                <p data-section="services" data-value="third-description">I know the importance of web design and can
+                    help you create a website you’ll love.</p>
             </div>
             <div class="services_item">
                 <i class="fas fa-thumbs-up"></i>
-                <h3 class="services_name">Social Media Integration</h3>
-                <p>There are a lot of social platforms out there, and you should promote your presence on them on your
+                <h3 class="services_name" data-section="services" data-value="fourth-title">Social Media Integration
+                </h3>
+                <p data-section="services" data-value="fourth-description">There are a lot of social platforms out
+                    there, and you should promote your presence on them on your
                     website</p>
             </div>
             <div class="services_item">
                 <i class="fas fa-tachometer-alt"></i>
-                <h3 class="services_name">Performance</h3>
-                <p>Retaining users is crucial to improving conversions. High-performing sites engage and retain users
+                <h3 class="services_name" data-section="services" data-value="fifth-title">Performance</h3>
+                <p data-section="services" data-value="fifth-description">Retaining users is crucial to improving
+                    conversions. High-performing sites engage and retain users
                 </p>
             </div>
             <div class="services_item">
                 <i class="fas fa-crosshairs"></i>
                 <h3 class="services_name">SEO</h3>
-                <p>I will optimize your site with intelligent Search Engine Optimization strategy to generate leads.</p>
+                <p data-section="services" data-value="sixth-description">I will optimize your site with intelligent
+                    Search Engine Optimization strategy to generate leads.</p>
             </div>
     </header>
     <header id="portfolio">
@@ -158,33 +175,33 @@
         </div>
     </header>
     <footer id="contact">
-        <h2 class="custom_title">Contact</h2>
-        <h3>Feel free to contact me!</h3>
+        <h2 class="custom_title" data-section="footer" data-value="first-text">Contact</h2>
+        <h3 data-section="footer" data-value="second-text">Feel free to contact me!</h3>
         <div class="container_contact_grid">
             <a href="mailto:elchrissr@gmail.com" target="_blank" rel="noopener noreferrer">
                 <div class="container_item">
                     <i class="fas fa-envelope"></i>
-                    <p>EMail Me!</p>
+                    <p data-section="footer" data-value="third-text">EMail Me!</p>
                 </div>
             </a>
             <a href="https://github.com/xraddi" target="_blank" rel="noopener noreferrer">
                 <div class="container_item">
                     <i class="fab fa-github"></i>
-                    <p>Follow Me!</p>
+                    <p data-section="footer" data-value="fourth-text">Follow Me!</p>
                 </div>
             </a>
             <a href="https://twitter.com/PoorRaddi" target="_blank" rel="noopener noreferrer">
                 <div class="container_item">
 
                     <i class="fab fa-twitter"></i>
-                    <p>Follow Me!</p>
+                    <p data-section="footer" data-value="fourth-text">Follow Me!</p>
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/cristian-semeniuk/" target="_blank" rel="noopener noreferrer">
                 <div class="container_item">
 
                     <i class="fab fa-linkedin-in"></i>
-                    <p>Follow Me!</p>
+                    <p data-section="footer" data-value="fourth-text">Follow Me!</p>
                 </div>
             </a>
         </div>

@@ -114,7 +114,7 @@ section {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transition: 0.3s ease;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 #home img:hover {
@@ -125,7 +125,8 @@ section {
 /* HOME  */
 
 #home .background {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/bg.webp');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)), url('../assets/bg_responsive.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -135,6 +136,7 @@ section {
     position: absolute;
     z-index: -1;
 }
+
 
 #home .container {
     display: flex;
@@ -448,11 +450,11 @@ footer {
     }
 
     #home h1 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     #home span {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     #home
@@ -569,6 +571,12 @@ footer {
     }
 
     /* HOME */
+
+    #home .background {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)), url('../assets/bg.webp');
+    }
+
     #home .container {
         flex-direction: row;
     }
@@ -657,21 +665,7 @@ footer {
         margin-bottom: 200px 0;
     }
 
-    #services {
-        margin-top: 100px;
-    }
-
-    /* PORTFOLIO */
-
-    #portfolio {
-        margin-top: 100px;
-    }
-
     /* CONTACTO */
-
-    #contact {
-        margin-top: 100px;
-    }
 
     #contact p {
         font-size: 22px;
@@ -698,6 +692,42 @@ footer {
 
     #contact p {
         font-size: 24px;
+    }
+
+    #about,
+    #skills,
+    #services,
+    #portfolio,
+    #contact {
+        padding: 60px;
+    }
+
+    /* LANGUAGE */
+    #nav-bar .flags {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        bottom: 20px;
+        left: 20px;
+        width: 240px;
+    }
+
+    #nav-bar .lang {
+        background-color: #cefe1a;
+        text-align: center;
+        cursor: pointer;
+        margin: 0px 8px;
+        width: 120px;
+        font-size: 20px;
+        margin: 5px 0px;
+        border: 4px solid #191919;
+    }
+
+    #nav-bar .lang:hover {
+        background-color: #f5f5f5;
     }
 }
 
@@ -737,4 +767,32 @@ footer {
 
 .active {
     display: flex;
+}
+
+.flags {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    bottom: 5px;
+    width: 100%;
+}
+
+.lang {
+    background-color: #cefe1a;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 4px;
+    width: 100px;
+    font-size: 16px;
+    border: 2px solid #191919;
+
+}
+
+.lang:hover {
+    background-color: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
 }
