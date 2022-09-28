@@ -1,5 +1,3 @@
-// RESPONSIVE MENU
-
 const icon = document.querySelector('.bars');
 const links = document.querySelector('.menu-responsive');
 
@@ -11,6 +9,7 @@ icon.addEventListener("click", () => {
 
 const flagsElement = document.getElementById("flags");
 const textsToChange = document.querySelectorAll("[data-section]");
+const downloadID = document.getElementById('download');
 
 const changeLanguage = async (language) => {
     const requestJson = await fetch(`./json/${language}.json`);
@@ -22,6 +21,8 @@ const changeLanguage = async (language) => {
 
         textToChange.innerHTML = texts[section][value]
     }
+
+    downloadID.href = `./assets/CV_2022_${language}.pdf`
 }
 
 flagsElement.addEventListener("click", (e) => {
@@ -31,3 +32,15 @@ flagsElement.addEventListener("click", (e) => {
 
 // CHANGE COLOR THEME
 
+const IconID = document.getElementById('icon');
+
+IconID.onclick = function () {
+    document.body.classList.toggle("white-theme");
+
+    if (document.body.classList.contains("white-theme")) {
+        IconID.src = "./assets/moon.png"
+    }
+    else {
+        IconID.src = "./assets/sun.png"
+    }
+}
